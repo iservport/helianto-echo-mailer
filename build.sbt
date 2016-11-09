@@ -1,11 +1,10 @@
-
 organization := "org.helianto"
 
 sbtVersion in ThisBuild := "0.13.9"
 
 scalaVersion in ThisBuild := "2.11.8"
 
-lazy val springBootVersion = "1.4.0.RELEASE"
+version := "1.0.0.RELEASE"
 
 lazy val root = (project in file("."))
   .enablePlugins(JavaServerAppPackaging, UniversalDeployPlugin)
@@ -18,6 +17,8 @@ lazy val root = (project in file("."))
     dockerExposedPorts := Seq(8082),
     dockerRepository := Some("iservport")
   )
+
+lazy val springBootVersion = "1.4.0.RELEASE"
 
 libraryDependencies ++= Seq(
   "org.projectlombok"                  % "lombok"                         % "1.16.8",

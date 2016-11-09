@@ -34,6 +34,7 @@ class EchoService {
          |[ link -> ${message.getDefaults.apiHome}${message.getServicePath}/${message.getId} ]
          |
          |----
+         |
          |${message.getDefaults.sentByText} ${message.getSender.contactEmail}
          |${message.getDefaults.disclaimer}
          |${message.getDefaults.ensure}
